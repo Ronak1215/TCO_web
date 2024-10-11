@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.13"
+  },
+  "name": "tco_web",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "tailwind": "npx tailwind -i ./src/input.css -o ./dist/style.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "swiper": "^11.1.14"
+  }
+}

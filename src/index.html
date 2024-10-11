@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../dist/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+/>
+
+  <title>Document</title>
+
+  <style>
+
+  </style>
+
+
+</head>
+<body class="h-full w-full">
+  <!-- navbar-start -->
+  <!-- <nav>
+    <div class="h-12 min-w-full px-16 py-12 flex justify-between items-center font-primary font-medium ">
+      <div><img src="../images/logo.png" alt="" srcset="" class="h-16"></div>
+      <div class="flex gap-10 items-center">
+        <h3>About us</h3>
+        <h3>Shop</h3>
+        <h3>Direction</h3>
+        <h3>Contact</h3>
+        <h3 class="px-8 py-3 rounded-full bg-orange-600 text-white">Shop now</h3>
+      </div>
+    </div>
+  </nav> -->
+
+  <!-- <section class="overflow-hidden">
+
+    <header class="header flex justify-between px-2 py-6 md:px-16 md:py-12 font-primary font-medium overflow-hidden">
+      <div><img src="../images/logo.png" alt="" srcset="" class="h-16"></div>
+  
+      <nav
+        class="nav absolute flex flex-col gap-4 md:items-center shadow-md w-[50%] h-screen right-0 bg-white px-4 md:static md:h-auto md:w-auto md:flex-row md:shadow-none duration-500 "
+      >
+        <button
+          class="close-nav relative top-0 right-0 text-right text-3xl md:hidden"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+  
+        <a
+          href="#"
+          class="nav-link text-2xl mb-2 md:mr-4  "
+          >About us</a
+        >
+        <a href="#" class="nav-link text-2xl mb-2 md:mr-4 "
+          >Shop</a
+        >
+        <a href="#" class="nav-link text-2xl mb-2 md:mr-4 "
+          >Direction</a
+        >
+        <a href="#" class="nav-link text-2xl mb-2 md:mr-4 "
+          >Contact</a
+        >
+        <a href="#" class="nav-link text-2xl mb-2 md:mr-4 md:px-8 md:py-3 md:rounded-full md:bg-orange-600 md:text-white "
+          >Shop now</a
+        >
+      </nav>
+  
+      <button class="show-nav text-3xl cursor-pointer md:hidden">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+  </section> -->
+
+  <nav class="relative flex flex-wrap items-center justify-between px-2 py-3 mb-3">
+    <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+      <div class="w-full relative flex justify-between lg:w-auto  px-4 lg:static lg:block lg:justify-start">
+        <div><img src="../images/logo.png" alt="" srcset="" class="h-16"></div>
+        <button class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button" onclick="toggleNavbar('example-collapse-navbar')">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      <div class="lg:flex flex-grow justify-center items-center hidden pt-8" id="example-collapse-navbar">
+        <ul class="flex flex-col lg:flex-row list-none lg:ml-auto font-primary font-medium">
+          <li class="nav-item">
+            <a class="mb-2 md:mr-4" href="#pablo">
+              About us
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="mb-2 md:mr-4" href="#pablo">
+              Shop
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="mb-2 md:mr-4" href="#pablo">
+              Direction
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="mb-2 md:mr-4" href="#pablo">
+              Contact
+              </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link lg:px-8 lg:py-3 lg:rounded-full lg:bg-orange-600 lg:text-white "
+          >Shop now</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+  <!-- navbar-end -->
+  
+  <!-- 1 page-start -->
+   <section class="max-w-full h-full  md:px-24 py-12 font-primary flex flex-col items-center gap-20 ">
+    <div class="text-2xl md:text-4xl font-bold leading-relaxed sm::w-3/4 lg:w-2/4 text-center">Get a Comprehensive Vision 
+      Examination Today</div>
+    <div class="flex text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:8xl gap-8 sm:gap-16 lg:gap-32 font-semibold text-gray-300 relative">
+      <div>C</div>
+      <div>X</div>
+      <div>A</div>
+      <div>B</div>
+      <div>Y</div>
+      <div>Z</div>
+      <img src="/images/glasses.png" alt="" srcset="" class="h-[125%] left-[33%] bottom-[-10%]
+      sm:h-[155%] sm:left-[33%] sm:bottom-[-26%] lg:h-[172%] lg:left-[35%] lg:bottom-[-36%]   absolute">
+    </div>
+    <div><h3 class="sm:px-8 sm:py-3 px-4 py-3 text-sm rounded-full bg-orange-600 text-white">Get Free Eye Check-up</h3></div>
+    
+   </section>
+
+  <!-- 1 page-end -->
+
+  <!-- 2 page-start -->
+
+   <section class="max-w-full h-full px-2 md:px-16 pb-8 lg:py-12">
+    <div class="lg:flex gap-20">
+      <div class="flex flex-col gap-3 "> 
+        <div class="flex p-2 gap-7 justify-center items-center">
+          <div class="flex flex-col items-center gap-2 border-solid border rounded-xl px-2 py-4 md:px-4 md:py-6 border-black">
+            <div><h3 class="font-primary text-xl md:text-3xl font-semibold">4.9/5</h3></div>  
+            <div><svg width="140" height="12" viewBox="0 0 162 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.5 7.57495C16.575 7.19995 16.275 6.74995 15.9 6.74995L11.625 6.14995L9.675 2.24995C9.6 2.09995 9.525 2.02495 9.375 1.94995C9 1.72495 8.55 1.87495 8.325 2.24995L6.45 6.14995L2.175 6.74995C1.95 6.74995 1.8 6.82495 1.725 6.97495C1.425 7.27495 1.425 7.72495 1.725 8.02495L4.8 11.025L4.05 15.3C4.05 15.45 4.05 15.6 4.125 15.75C4.35 16.125 4.8 16.275 5.175 16.05L9 14.025L12.825 16.05C12.9 16.125 13.05 16.125 13.2 16.125C13.275 16.125 13.275 16.125 13.35 16.125C13.725 16.05 14.025 15.675 13.95 15.225L13.2 10.95L16.275 7.94995C16.425 7.87495 16.5 7.72495 16.5 7.57495Z" fill="#FBC906"/>
+              <path d="M52.5 7.57495C52.575 7.19995 52.275 6.74995 51.9 6.74995L47.625 6.14995L45.675 2.24995C45.6 2.09995 45.525 2.02495 45.375 1.94995C45 1.72495 44.55 1.87495 44.325 2.24995L42.45 6.14995L38.175 6.74995C37.95 6.74995 37.8 6.82495 37.725 6.97495C37.425 7.27495 37.425 7.72495 37.725 8.02495L40.8 11.025L40.05 15.3C40.05 15.45 40.05 15.6 40.125 15.75C40.35 16.125 40.8 16.275 41.175 16.05L45 14.025L48.825 16.05C48.9 16.125 49.05 16.125 49.2 16.125C49.275 16.125 49.275 16.125 49.35 16.125C49.725 16.05 50.025 15.675 49.95 15.225L49.2 10.95L52.275 7.94995C52.425 7.87495 52.5 7.72495 52.5 7.57495Z" fill="#FBC906"/>
+              <path d="M88.5 7.57495C88.575 7.19995 88.275 6.74995 87.9 6.74995L83.625 6.14995L81.675 2.24995C81.6 2.09995 81.525 2.02495 81.375 1.94995C81 1.72495 80.55 1.87495 80.325 2.24995L78.45 6.14995L74.175 6.74995C73.95 6.74995 73.8 6.82495 73.725 6.97495C73.425 7.27495 73.425 7.72495 73.725 8.02495L76.8 11.025L76.05 15.3C76.05 15.45 76.05 15.6 76.125 15.75C76.35 16.125 76.8 16.275 77.175 16.05L81 14.025L84.825 16.05C84.9 16.125 85.05 16.125 85.2 16.125C85.275 16.125 85.275 16.125 85.35 16.125C85.725 16.05 86.025 15.675 85.95 15.225L85.2 10.95L88.275 7.94995C88.425 7.87495 88.5 7.72495 88.5 7.57495Z" fill="#FBC906"/>
+              <path d="M124.5 7.57495C124.575 7.19995 124.275 6.74995 123.9 6.74995L119.625 6.14995L117.675 2.24995C117.6 2.09995 117.525 2.02495 117.375 1.94995C117 1.72495 116.55 1.87495 116.325 2.24995L114.45 6.14995L110.175 6.74995C109.95 6.74995 109.8 6.82495 109.725 6.97495C109.425 7.27495 109.425 7.72495 109.725 8.02495L112.8 11.025L112.05 15.3C112.05 15.45 112.05 15.6 112.125 15.75C112.35 16.125 112.8 16.275 113.175 16.05L117 14.025L120.825 16.05C120.9 16.125 121.05 16.125 121.2 16.125C121.275 16.125 121.275 16.125 121.35 16.125C121.725 16.05 122.025 15.675 121.95 15.225L121.2 10.95L124.275 7.94995C124.425 7.87495 124.5 7.72495 124.5 7.57495Z" fill="#FBC906"/>
+              <path d="M160.5 7.57495C160.575 7.19995 160.275 6.74995 159.9 6.74995L155.625 6.14995L153.675 2.24995C153.6 2.09995 153.525 2.02495 153.375 1.94995C153 1.72495 152.55 1.87495 152.325 2.24995L150.45 6.14995L146.175 6.74995C145.95 6.74995 145.8 6.82495 145.725 6.97495C145.425 7.27495 145.425 7.72495 145.725 8.02495L148.8 11.025L148.05 15.3C148.05 15.45 148.05 15.6 148.125 15.75C148.35 16.125 148.8 16.275 149.175 16.05L153 14.025L156.825 16.05C156.9 16.125 157.05 16.125 157.2 16.125C157.275 16.125 157.275 16.125 157.35 16.125C157.725 16.05 158.025 15.675 157.95 15.225L157.2 10.95L160.275 7.94995C160.425 7.87495 160.5 7.72495 160.5 7.57495Z" fill="#FBC906"/>
+              </svg>
+              </div>  
+            <div class="font-medium font-secondary">978 Rating</div>  
+            <div class="font-bold md:text-lg font-secondary">Read Reviews</div>  
+          </div>
+          <div class="flex flex-col items-center gap-2 border-solid border rounded-xl px-2 py-4 md:px-4 md:py-6 border-black">
+            <div><h3 class="font-primary text-xl md:text-3xl font-semibold">48K</h3></div>  
+            <div><svg width="140" height="12" viewBox="0 0 162 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.5 7.57495C16.575 7.19995 16.275 6.74995 15.9 6.74995L11.625 6.14995L9.675 2.24995C9.6 2.09995 9.525 2.02495 9.375 1.94995C9 1.72495 8.55 1.87495 8.325 2.24995L6.45 6.14995L2.175 6.74995C1.95 6.74995 1.8 6.82495 1.725 6.97495C1.425 7.27495 1.425 7.72495 1.725 8.02495L4.8 11.025L4.05 15.3C4.05 15.45 4.05 15.6 4.125 15.75C4.35 16.125 4.8 16.275 5.175 16.05L9 14.025L12.825 16.05C12.9 16.125 13.05 16.125 13.2 16.125C13.275 16.125 13.275 16.125 13.35 16.125C13.725 16.05 14.025 15.675 13.95 15.225L13.2 10.95L16.275 7.94995C16.425 7.87495 16.5 7.72495 16.5 7.57495Z" fill="#FBC906"/>
+              <path d="M52.5 7.57495C52.575 7.19995 52.275 6.74995 51.9 6.74995L47.625 6.14995L45.675 2.24995C45.6 2.09995 45.525 2.02495 45.375 1.94995C45 1.72495 44.55 1.87495 44.325 2.24995L42.45 6.14995L38.175 6.74995C37.95 6.74995 37.8 6.82495 37.725 6.97495C37.425 7.27495 37.425 7.72495 37.725 8.02495L40.8 11.025L40.05 15.3C40.05 15.45 40.05 15.6 40.125 15.75C40.35 16.125 40.8 16.275 41.175 16.05L45 14.025L48.825 16.05C48.9 16.125 49.05 16.125 49.2 16.125C49.275 16.125 49.275 16.125 49.35 16.125C49.725 16.05 50.025 15.675 49.95 15.225L49.2 10.95L52.275 7.94995C52.425 7.87495 52.5 7.72495 52.5 7.57495Z" fill="#FBC906"/>
+              <path d="M88.5 7.57495C88.575 7.19995 88.275 6.74995 87.9 6.74995L83.625 6.14995L81.675 2.24995C81.6 2.09995 81.525 2.02495 81.375 1.94995C81 1.72495 80.55 1.87495 80.325 2.24995L78.45 6.14995L74.175 6.74995C73.95 6.74995 73.8 6.82495 73.725 6.97495C73.425 7.27495 73.425 7.72495 73.725 8.02495L76.8 11.025L76.05 15.3C76.05 15.45 76.05 15.6 76.125 15.75C76.35 16.125 76.8 16.275 77.175 16.05L81 14.025L84.825 16.05C84.9 16.125 85.05 16.125 85.2 16.125C85.275 16.125 85.275 16.125 85.35 16.125C85.725 16.05 86.025 15.675 85.95 15.225L85.2 10.95L88.275 7.94995C88.425 7.87495 88.5 7.72495 88.5 7.57495Z" fill="#FBC906"/>
+              <path d="M124.5 7.57495C124.575 7.19995 124.275 6.74995 123.9 6.74995L119.625 6.14995L117.675 2.24995C117.6 2.09995 117.525 2.02495 117.375 1.94995C117 1.72495 116.55 1.87495 116.325 2.24995L114.45 6.14995L110.175 6.74995C109.95 6.74995 109.8 6.82495 109.725 6.97495C109.425 7.27495 109.425 7.72495 109.725 8.02495L112.8 11.025L112.05 15.3C112.05 15.45 112.05 15.6 112.125 15.75C112.35 16.125 112.8 16.275 113.175 16.05L117 14.025L120.825 16.05C120.9 16.125 121.05 16.125 121.2 16.125C121.275 16.125 121.275 16.125 121.35 16.125C121.725 16.05 122.025 15.675 121.95 15.225L121.2 10.95L124.275 7.94995C124.425 7.87495 124.5 7.72495 124.5 7.57495Z" fill="#FBC906"/>
+              <path d="M160.5 7.57495C160.575 7.19995 160.275 6.74995 159.9 6.74995L155.625 6.14995L153.675 2.24995C153.6 2.09995 153.525 2.02495 153.375 1.94995C153 1.72495 152.55 1.87495 152.325 2.24995L150.45 6.14995L146.175 6.74995C145.95 6.74995 145.8 6.82495 145.725 6.97495C145.425 7.27495 145.425 7.72495 145.725 8.02495L148.8 11.025L148.05 15.3C148.05 15.45 148.05 15.6 148.125 15.75C148.35 16.125 148.8 16.275 149.175 16.05L153 14.025L156.825 16.05C156.9 16.125 157.05 16.125 157.2 16.125C157.275 16.125 157.275 16.125 157.35 16.125C157.725 16.05 158.025 15.675 157.95 15.225L157.2 10.95L160.275 7.94995C160.425 7.87495 160.5 7.72495 160.5 7.57495Z" fill="#FBC906"/>
+              </svg>
+              </div>  
+            <div class="font-medium font-secondary">Total Customer</div>  
+            <div class="font-bold md:text-lg font-secondary">Total Customer</div>  
+          </div>
+        </div>     
+        <div class=""><img src="../images/storeimg.png" alt="" srcset="" class="h-full object-cover">
+        </div>
+      </div>
+      
+      <div class="lg:w-4/5">
+        <div class="flex flex-col gap-7 items-center lg:items-start mt-10 lg:mt-0">
+          <div class="flex gap-4 items-center">
+            <div class="h-3 w-3 bg-orange-600 rounded-xl"></div>
+            <div class="font-secondary font-bold text-xs">What we do</div>
+          </div>
+          <div class="font-primary font-bold text-3xl text-center md:text-left lg:w-5/6">Best Optometrist & Eye Care That You Can Trust</div>
+          <div class="font-secondary px-4 md:px-0 md:leading-8 lg:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, est felis, sagittis viverra nulla mattis scelerisque. Eget cras integer. The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, est felis, sagittis viverra nulla mattis scelerisque. Eget cras integer. The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software.</div>
+        </div>
+        <div class="flex justify-between mt-8 lg:mt-32">
+          <div class="flex gap-3">
+            <div >
+              <svg class="bg-pink-100 rounded-full p-2" width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM14.67 16.43L12.42 17.93C12.29 18.01 12.15 18.06 12 18.06C11.85 18.06 11.71 18.02 11.58 17.93L9.33 16.43C8.99 16.2 8.89 15.73 9.12 15.39C9.35 15.04 9.82 14.95 10.16 15.18L11.99 16.4L13.82 15.18C14.16 14.95 14.63 15.04 14.86 15.39C15.1 15.74 15.01 16.2 14.67 16.43ZM16.5 12.99C16.5 13.77 15.65 14.25 14.99 13.85L12.52 12.37C12.2 12.18 11.81 12.18 11.49 12.37L9.02 13.85C8.35 14.25 7.50999 13.77 7.50999 12.99V9.16C7.50999 8.82 7.69 8.50001 7.97 8.32001L11.47 6.10001C11.8 5.89001 12.21 5.89001 12.54 6.10001L16.04 8.32001C16.33 8.50001 16.5 8.82 16.5 9.16V12.99Z" fill="#D62B06"/>
+                </svg>      
+            </div>
+            <div>
+              <h4 class="text-sm font-semibold font-primary">Mantain your moments</h4>
+              <p class="text-xs font-secondary">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <div >
+              <svg class="bg-pink-100 rounded-full p-2" width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM14.67 16.43L12.42 17.93C12.29 18.01 12.15 18.06 12 18.06C11.85 18.06 11.71 18.02 11.58 17.93L9.33 16.43C8.99 16.2 8.89 15.73 9.12 15.39C9.35 15.04 9.82 14.95 10.16 15.18L11.99 16.4L13.82 15.18C14.16 14.95 14.63 15.04 14.86 15.39C15.1 15.74 15.01 16.2 14.67 16.43ZM16.5 12.99C16.5 13.77 15.65 14.25 14.99 13.85L12.52 12.37C12.2 12.18 11.81 12.18 11.49 12.37L9.02 13.85C8.35 14.25 7.50999 13.77 7.50999 12.99V9.16C7.50999 8.82 7.69 8.50001 7.97 8.32001L11.47 6.10001C11.8 5.89001 12.21 5.89001 12.54 6.10001L16.04 8.32001C16.33 8.50001 16.5 8.82 16.5 9.16V12.99Z" fill="#D62B06"/>
+                </svg>      
+            </div>
+            <div>
+              <h4 class="text-sm font-semibold font-primary">Mantain your moments</h4>
+              <p class="text-xs font-secondary">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+   </section>
+
+  <!-- 2 page-end -->
+
+  <!-- marquee-start -->
+
+   <section class="mt-4 md:mt-8 lg:mt-16">
+    <img src="../images/marque.png" alt="" srcset="">
+   </section>
+
+  <!-- marquee-end -->
+
+  <!-- 3 page-start -->
+
+   <section class="mt-7 md:mt-14 lg:mt-28 flex flex-col items-center gap-10">
+    <div class="">
+      <div class="flex gap-4 items-center">
+        <div class="h-3 w-3 bg-orange-600 rounded-xl"></div>
+        <div class="font-secondary font-bold text-xs">Our Legacy</div>
+      </div>
+    </div>
+    <div>
+      <h2 class="font-primary text-center text-3xl font-bold">Over 20 years</h2>
+      <p class="font-secondary text-center font mt-3">Click on the year below to see store History</p>
+    </div>
+    <div class="swiper-first">
+      <div class="swiper mySwiper h-[67vh] relative">
+        <div class="swiper-wrapper">
+      <div class="content swiper-slide flex flex-col" data-title="2015">
+        <img src="../images//Image1.jpg" alt="" class="">
+        <div class="text-content">
+          <h3>2015</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ea quia explicabo, praesentium debitis nihil ab expedita sit nemo ipsam sunt aut modi, accusantium fugiat.</p>
+        </div>
+      </div>
+      <div class="content swiper-slide flex flex-col" data-title="2016">
+        <img src="../images/image2.jpg" alt="">
+        <div class="text-content">
+          <h3>2016</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ea quia explicabo, praesentium debitis nihil ab expedita sit nemo ipsam sunt aut modi, accusantium fugiat.</p>
+        </div>
+      </div>
+      <div class="content swiper-slide flex flex-col" data-title="2017">
+        <img src="../images/image3.jpg" alt="">
+        <div class="text-content">
+          <h3>2017</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ea quia explicabo, praesentium debitis nihil ab expedita sit nemo ipsam sunt aut modi, accusantium fugiat.</p>
+        </div>
+      </div>
+      <div class="content swiper-slide flex flex-col" data-title="2018">
+        <img src="/images/image4.jpg" alt="">
+        <div class="text-content">
+          <h3>2018</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ea quia explicabo, praesentium debitis nihil ab expedita sit nemo ipsam sunt aut modi, accusantium fugiat.</p>
+        </div>
+      </div>
+      <div class="content swiper-slide flex flex-col" data-title="2019">
+        <img src="/images/Image1.jpg" alt="">
+        <div class="text-content">
+          <h3>2019</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ea quia explicabo, praesentium debitis nihil ab expedita sit nemo ipsam sunt aut modi, accusantium fugiat.</p>
+        </div>
+      </div>
+      <div class="content swiper-slide flex flex-col" data-title="2020">
+        <img src="/images/image6.jpg" alt="">
+        <div class="text-content">
+          <h3>2020</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ea quia explicabo, praesentium debitis nihil ab expedita sit nemo ipsam sunt aut modi, accusantium fugiat.</p>
+        </div>
+      </div>  
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+    </div>
+    
+</section>
+   </section>
+
+  <!-- 3 page-end -->
+
+
+  <!-- 4 page-start -->
+
+  <section class="mt-7 md:mt-14 lg:mt-28 flex flex-col items-center gap-10">
+    <div>
+      <div class="flex gap-4 items-center">
+        <div class="h-3 w-3 bg-orange-600 rounded-xl"></div>
+        <div class="font-secondary font-bold text-xs">Our Category</div>
+      </div>
+    </div>
+    <div>
+      <h2 class="font-primary text-center text-3xl font-bold">Check out latest New Category</h2>
+    </div>
+    <div class="lg:flex gap-8 w-full px-2 md:px-16 md:py-12">
+      <div class="bg-[#EFF0F2] lg:w-3/6 items-end">
+        <div class="bg-[#EFF0F2] h-full p-6 relative overflow-hidden">
+          <div class="relative z-10 flex-col justify-evenly h-64 text-black">
+              <div class="text-left">
+                  <h3 class="font-secondary text-2xl font-light">Up to 60% off</h3>
+              </div>
+              <div class="text-left">
+                <h3 class="font-primary text-2xl overflow-visible top-3 w-52 leading-10"><span class="font-semibold">ROUNDED</span> COLLECTION</h3>
+              </div>
+              <div class="w-full">
+                <h3 class="font-primary text-lg font-semibold mt-8">SHOP NOW</h3>
+                <div class="w-16 border-b-2 border-black mt-3"></div>
+              </div>  
+          </div>
+          <div class="absolute bottom-0 right-0 w-2/3 h-full overflow-hidden">
+              <img src="/images/hero1.png" alt="Avaiator Collection" class="lg:w-full lg:h-full  object-top">
+          </div>
+      </div>
+      </div>
+      <div class="lg:w-3/6 flex flex-col lg:gap-6">
+        <div class="bg-[#E5E1DD] h-full p-6 relative overflow-hidden mt-2 lg:mt-0">
+          <div class="relative z-10 flex-col justify-evenly h-64 text-black">
+              <div class="text-left">
+                  <h3 class="font-secondary text-2xl font-light">Up to 60% off</h3>
+              </div>
+              <div class="text-left">
+                <h3 class="font-primary text-2xl overflow-visible top-3 w-52 leading-10"><span class="font-semibold">ROUNDED</span> COLLECTION</h3>
+              </div>
+              <div class="w-full">
+                <h3 class="font-primary text-lg font-semibold mt-8">SHOP NOW</h3>
+                <div class="w-16 border-b-2 border-black mt-3"></div>
+              </div>  
+          </div>
+          <div class="absolute bottom-0 right-0 w-3/5 h-3/4 overflow-hidden">
+              <img src="/images/hero2.png" alt="Avaiator Collection" class="w-full h-full object-cover object-top">
+          </div>
+      </div>
+        <div class="lg:flex h-full gap-6">
+          <div class="lg:w-3/6 bg-[#E7E6E4] p-6 relative overflow-hidden mt-2 lg:mt-0">
+            <div class="relative z-10 flex flex-col justify-evenly h-64 text-black">
+                <div class="text-left">
+                    <h3 class="font-secondary text-2xl font-light">Up to 60% off</h3>
+                </div>
+                <div class="text-left">
+                  <h3 class="font-primary text-2xl overflow-visible top-3 w-52 leading-10"><span class="font-semibold">AVAIATOR</span> COLLECTION</h3>
+                </div>
+                <div class="w-full">
+                  <h3 class="font-primary text-lg font-semibold mt-8">SHOP NOW</h3>
+                  <div class="w-16 border-b-2 border-black mt-3"></div>
+                </div>  
+            </div>
+            <div class="absolute bottom-0 right-0 w-2/3 h-3/4 overflow-hidden">
+                <img src="/images/hero3.png" alt="Avaiator Collection" class="w-full h-full object-cover">
+            </div>
+        </div>
+        <div class="lg:w-3/6 bg-[#F5E6E0] p-6 relative overflow-hidden mt-2 lg:mt-0">
+          <div class="relative z-10 flex flex-col justify-evenly h-64 text-black">
+              <div class="text-left">
+                  <h3 class="font-secondary text-2xl font-light">Up to 60% off</h3>
+              </div>
+              <div class="text-left">
+                <h3 class="font-primary text-2xl overflow-visible top-3 w-52 leading-10"><span class="font-semibold">ROUNDED</span> COLLECTION</h3>
+              </div>
+              <div class="w-full">
+                <h3 class="font-primary text-lg font-semibold mt-8">SHOP NOW</h3>
+                <div class="w-16 border-b-2 border-black mt-3"></div>
+              </div>  
+          </div>
+          <div class="absolute bottom-0 right-0 w-2/3 h-5/6 overflow-hidden">
+              <img src="/images/hero4.png" alt="Avaiator Collection" class="w-full h-full object-cover">
+          </div>
+      </div>
+                   
+        </div>
+      </div>
+    </div>
+   </section>
+
+  <!-- 4 page-end -->
+
+  <!-- 5 page-start -->
+
+  <section>
+    <div class="mt-7 md:mt-14 lg:mt-28 flex flex-col items-center gap-10">
+      <div>
+        <div class="flex gap-4 items-center">
+          <div class="h-3 w-3 bg-orange-600 rounded-xl"></div>
+          <div class="font-secondary font-bold text-xs">Our Category</div>
+        </div>
+      </div>
+      <div>
+        <h2 class="font-primary text-center text-3xl font-bold">Why Customer trust us</h2>
+      </div>
+    </div>
+    <div>
+         <!--HTML CODE-->
+         <div class="relative mt-20 md:ml-[52px] swiper-second">
+          <div class="swiper multiple-slide-carousel swiper-container relative ">
+           <div class="swiper-wrapper mb-12">
+             <div class="swiper-slide ">
+               <div class="rounded-2xl h-80 w-96 p-10 border">
+                 <div class="flex gap-3">
+                  <div><img src="/images/profile.jpeg" alt="" srcset="" class="h-16 rounded-full"></div>
+                  <div class="flex flex-col justify-center items-center gap-2">
+                    <div><p class="font-primary font-semibold text-lg">Rohit Sharma</p></div>
+                    <div><svg width="132" height="21" viewBox="0 0 132 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.56923 2.1465C9.78875 1.47088 10.7446 1.47088 10.9641 2.1465L12.407 6.58737C12.5052 6.88952 12.7868 7.09409 13.1045 7.09409H17.7739C18.4843 7.09409 18.7796 8.00314 18.2049 8.4207L14.4273 11.1653C14.1703 11.3521 14.0627 11.6831 14.1609 11.9852L15.6038 16.4261C15.8233 17.1017 15.0501 17.6635 14.4753 17.246L10.6977 14.5014C10.4407 14.3146 10.0926 14.3146 9.83562 14.5014L6.058 17.246C5.48327 17.6635 4.70999 17.1017 4.92951 16.4261L6.37244 11.9852C6.47061 11.6831 6.36306 11.3521 6.10604 11.1653L2.32841 8.4207C1.75369 8.00314 2.04906 7.09409 2.75945 7.09409H7.42886C7.74656 7.09409 8.02813 6.88952 8.1263 6.58737L9.56923 2.1465Z" fill="#FBC906"/>
+                      <path d="M37.4364 2.1465C37.6559 1.47088 38.6118 1.47088 38.8313 2.1465L40.2742 6.58737C40.3724 6.88952 40.654 7.09409 40.9717 7.09409H45.6411C46.3515 7.09409 46.6468 8.00314 46.0721 8.4207L42.2945 11.1653C42.0375 11.3521 41.9299 11.6831 42.0281 11.9852L43.471 16.4261C43.6905 17.1017 42.9172 17.6635 42.3425 17.246L38.5649 14.5014C38.3079 14.3146 37.9598 14.3146 37.7028 14.5014L33.9252 17.246C33.3505 17.6635 32.5772 17.1017 32.7967 16.4261L34.2396 11.9852C34.3378 11.6831 34.2303 11.3521 33.9732 11.1653L30.1956 8.4207C29.6209 8.00314 29.9162 7.09409 30.6266 7.09409H35.296C35.6137 7.09409 35.8953 6.88952 35.9935 6.58737L37.4364 2.1465Z" fill="#FBC906"/>
+                      <path d="M65.3036 2.1465C65.5231 1.47088 66.479 1.47088 66.6985 2.1465L68.1414 6.58737C68.2396 6.88952 68.5212 7.09409 68.8389 7.09409H73.5083C74.2187 7.09409 74.514 8.00314 73.9393 8.4207L70.1617 11.1653C69.9046 11.3521 69.7971 11.6831 69.8953 11.9852L71.3382 16.4261C71.5577 17.1017 70.7844 17.6635 70.2097 17.246L66.4321 14.5014C66.1751 14.3146 65.827 14.3146 65.57 14.5014L61.7924 17.246C61.2176 17.6635 60.4444 17.1017 60.6639 16.4261L62.1068 11.9852C62.205 11.6831 62.0974 11.3521 61.8404 11.1653L58.0628 8.4207C57.4881 8.00314 57.7834 7.09409 58.4938 7.09409H63.1632C63.4809 7.09409 63.7625 6.88952 63.8607 6.58737L65.3036 2.1465Z" fill="#FBC906"/>
+                      <path d="M93.1708 2.1465C93.3903 1.47088 94.3461 1.47088 94.5657 2.1465L96.0086 6.58737C96.1068 6.88952 96.3883 7.09409 96.706 7.09409H101.375C102.086 7.09409 102.381 8.00314 101.806 8.4207L98.0289 11.1653C97.7718 11.3521 97.6643 11.6831 97.7625 11.9852L99.2054 16.4261C99.4249 17.1017 98.6516 17.6635 98.0769 17.246L94.2993 14.5014C94.0422 14.3146 93.6942 14.3146 93.4372 14.5014L89.6596 17.246C89.0848 17.6635 88.3116 17.1017 88.5311 16.4261L89.974 11.9852C90.0722 11.6831 89.9646 11.3521 89.7076 11.1653L85.93 8.4207C85.3553 8.00314 85.6506 7.09409 86.361 7.09409H91.0304C91.3481 7.09409 91.6297 6.88952 91.7279 6.58737L93.1708 2.1465Z" fill="#FBC906"/>
+                      <path d="M121.038 2.1465C121.258 1.47088 122.213 1.47088 122.433 2.1465L123.876 6.58737C123.974 6.88952 124.256 7.09409 124.573 7.09409H129.243C129.953 7.09409 130.248 8.00314 129.674 8.4207L125.896 11.1653C125.639 11.3521 125.531 11.6831 125.63 11.9852L127.073 16.4261C127.292 17.1017 126.519 17.6635 125.944 17.246L122.166 14.5014C121.909 14.3146 121.561 14.3146 121.304 14.5014L117.527 17.246C116.952 17.6635 116.179 17.1017 116.398 16.4261L117.841 11.9852C117.939 11.6831 117.832 11.3521 117.575 11.1653L113.797 8.4207C113.222 8.00314 113.518 7.09409 114.228 7.09409H118.898C119.215 7.09409 119.497 6.88952 119.595 6.58737L121.038 2.1465Z" fill="#FBC906"/>
+                      </svg>                      
+                      </div>
+                  </div>
+                 </div>
+                 <div class="mt-4"><p class="font-secondary font-normal text-base text-left text-[#443634]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum,</p></div>
+               </div>
+             </div>
+             <div class="swiper-slide ">
+              <div class="rounded-2xl h-80 w-96 p-10 border">
+                <div class="flex gap-3">
+                 <div><img src="/images/profile2.jpeg" alt="" srcset="" class="h-16 rounded-full"></div>
+                 <div class="flex flex-col justify-center items-center gap-2">
+                   <div><p class="font-primary font-semibold text-lg">Mohit Sharma</p></div>
+                   <div><svg width="132" height="21" viewBox="0 0 132 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M9.56923 2.1465C9.78875 1.47088 10.7446 1.47088 10.9641 2.1465L12.407 6.58737C12.5052 6.88952 12.7868 7.09409 13.1045 7.09409H17.7739C18.4843 7.09409 18.7796 8.00314 18.2049 8.4207L14.4273 11.1653C14.1703 11.3521 14.0627 11.6831 14.1609 11.9852L15.6038 16.4261C15.8233 17.1017 15.0501 17.6635 14.4753 17.246L10.6977 14.5014C10.4407 14.3146 10.0926 14.3146 9.83562 14.5014L6.058 17.246C5.48327 17.6635 4.70999 17.1017 4.92951 16.4261L6.37244 11.9852C6.47061 11.6831 6.36306 11.3521 6.10604 11.1653L2.32841 8.4207C1.75369 8.00314 2.04906 7.09409 2.75945 7.09409H7.42886C7.74656 7.09409 8.02813 6.88952 8.1263 6.58737L9.56923 2.1465Z" fill="#FBC906"/>
+                     <path d="M37.4364 2.1465C37.6559 1.47088 38.6118 1.47088 38.8313 2.1465L40.2742 6.58737C40.3724 6.88952 40.654 7.09409 40.9717 7.09409H45.6411C46.3515 7.09409 46.6468 8.00314 46.0721 8.4207L42.2945 11.1653C42.0375 11.3521 41.9299 11.6831 42.0281 11.9852L43.471 16.4261C43.6905 17.1017 42.9172 17.6635 42.3425 17.246L38.5649 14.5014C38.3079 14.3146 37.9598 14.3146 37.7028 14.5014L33.9252 17.246C33.3505 17.6635 32.5772 17.1017 32.7967 16.4261L34.2396 11.9852C34.3378 11.6831 34.2303 11.3521 33.9732 11.1653L30.1956 8.4207C29.6209 8.00314 29.9162 7.09409 30.6266 7.09409H35.296C35.6137 7.09409 35.8953 6.88952 35.9935 6.58737L37.4364 2.1465Z" fill="#FBC906"/>
+                     <path d="M65.3036 2.1465C65.5231 1.47088 66.479 1.47088 66.6985 2.1465L68.1414 6.58737C68.2396 6.88952 68.5212 7.09409 68.8389 7.09409H73.5083C74.2187 7.09409 74.514 8.00314 73.9393 8.4207L70.1617 11.1653C69.9046 11.3521 69.7971 11.6831 69.8953 11.9852L71.3382 16.4261C71.5577 17.1017 70.7844 17.6635 70.2097 17.246L66.4321 14.5014C66.1751 14.3146 65.827 14.3146 65.57 14.5014L61.7924 17.246C61.2176 17.6635 60.4444 17.1017 60.6639 16.4261L62.1068 11.9852C62.205 11.6831 62.0974 11.3521 61.8404 11.1653L58.0628 8.4207C57.4881 8.00314 57.7834 7.09409 58.4938 7.09409H63.1632C63.4809 7.09409 63.7625 6.88952 63.8607 6.58737L65.3036 2.1465Z" fill="#FBC906"/>
+                     <path d="M93.1708 2.1465C93.3903 1.47088 94.3461 1.47088 94.5657 2.1465L96.0086 6.58737C96.1068 6.88952 96.3883 7.09409 96.706 7.09409H101.375C102.086 7.09409 102.381 8.00314 101.806 8.4207L98.0289 11.1653C97.7718 11.3521 97.6643 11.6831 97.7625 11.9852L99.2054 16.4261C99.4249 17.1017 98.6516 17.6635 98.0769 17.246L94.2993 14.5014C94.0422 14.3146 93.6942 14.3146 93.4372 14.5014L89.6596 17.246C89.0848 17.6635 88.3116 17.1017 88.5311 16.4261L89.974 11.9852C90.0722 11.6831 89.9646 11.3521 89.7076 11.1653L85.93 8.4207C85.3553 8.00314 85.6506 7.09409 86.361 7.09409H91.0304C91.3481 7.09409 91.6297 6.88952 91.7279 6.58737L93.1708 2.1465Z" fill="#FBC906"/>
+                     <path d="M121.038 2.1465C121.258 1.47088 122.213 1.47088 122.433 2.1465L123.876 6.58737C123.974 6.88952 124.256 7.09409 124.573 7.09409H129.243C129.953 7.09409 130.248 8.00314 129.674 8.4207L125.896 11.1653C125.639 11.3521 125.531 11.6831 125.63 11.9852L127.073 16.4261C127.292 17.1017 126.519 17.6635 125.944 17.246L122.166 14.5014C121.909 14.3146 121.561 14.3146 121.304 14.5014L117.527 17.246C116.952 17.6635 116.179 17.1017 116.398 16.4261L117.841 11.9852C117.939 11.6831 117.832 11.3521 117.575 11.1653L113.797 8.4207C113.222 8.00314 113.518 7.09409 114.228 7.09409H118.898C119.215 7.09409 119.497 6.88952 119.595 6.58737L121.038 2.1465Z" fill="#FBC906"/>
+                     </svg>                      
+                     </div>
+                 </div>
+                </div>
+                <div class="mt-4"><p class="font-secondary font-normal text-base text-left text-[#443634]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum,</p></div>
+              </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="rounded-2xl h-80 w-96 p-10 border">
+                <div class="flex gap-3">
+                 <div><img src="/images/profile3.jpeg" alt="" srcset="" class="h-16 rounded-full"></div>
+                 <div class="flex flex-col justify-center items-center gap-2">
+                   <div><p class="font-primary font-semibold text-lg">Neha Sharma</p></div>
+                   <div><svg width="132" height="21" viewBox="0 0 132 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M9.56923 2.1465C9.78875 1.47088 10.7446 1.47088 10.9641 2.1465L12.407 6.58737C12.5052 6.88952 12.7868 7.09409 13.1045 7.09409H17.7739C18.4843 7.09409 18.7796 8.00314 18.2049 8.4207L14.4273 11.1653C14.1703 11.3521 14.0627 11.6831 14.1609 11.9852L15.6038 16.4261C15.8233 17.1017 15.0501 17.6635 14.4753 17.246L10.6977 14.5014C10.4407 14.3146 10.0926 14.3146 9.83562 14.5014L6.058 17.246C5.48327 17.6635 4.70999 17.1017 4.92951 16.4261L6.37244 11.9852C6.47061 11.6831 6.36306 11.3521 6.10604 11.1653L2.32841 8.4207C1.75369 8.00314 2.04906 7.09409 2.75945 7.09409H7.42886C7.74656 7.09409 8.02813 6.88952 8.1263 6.58737L9.56923 2.1465Z" fill="#FBC906"/>
+                     <path d="M37.4364 2.1465C37.6559 1.47088 38.6118 1.47088 38.8313 2.1465L40.2742 6.58737C40.3724 6.88952 40.654 7.09409 40.9717 7.09409H45.6411C46.3515 7.09409 46.6468 8.00314 46.0721 8.4207L42.2945 11.1653C42.0375 11.3521 41.9299 11.6831 42.0281 11.9852L43.471 16.4261C43.6905 17.1017 42.9172 17.6635 42.3425 17.246L38.5649 14.5014C38.3079 14.3146 37.9598 14.3146 37.7028 14.5014L33.9252 17.246C33.3505 17.6635 32.5772 17.1017 32.7967 16.4261L34.2396 11.9852C34.3378 11.6831 34.2303 11.3521 33.9732 11.1653L30.1956 8.4207C29.6209 8.00314 29.9162 7.09409 30.6266 7.09409H35.296C35.6137 7.09409 35.8953 6.88952 35.9935 6.58737L37.4364 2.1465Z" fill="#FBC906"/>
+                     <path d="M65.3036 2.1465C65.5231 1.47088 66.479 1.47088 66.6985 2.1465L68.1414 6.58737C68.2396 6.88952 68.5212 7.09409 68.8389 7.09409H73.5083C74.2187 7.09409 74.514 8.00314 73.9393 8.4207L70.1617 11.1653C69.9046 11.3521 69.7971 11.6831 69.8953 11.9852L71.3382 16.4261C71.5577 17.1017 70.7844 17.6635 70.2097 17.246L66.4321 14.5014C66.1751 14.3146 65.827 14.3146 65.57 14.5014L61.7924 17.246C61.2176 17.6635 60.4444 17.1017 60.6639 16.4261L62.1068 11.9852C62.205 11.6831 62.0974 11.3521 61.8404 11.1653L58.0628 8.4207C57.4881 8.00314 57.7834 7.09409 58.4938 7.09409H63.1632C63.4809 7.09409 63.7625 6.88952 63.8607 6.58737L65.3036 2.1465Z" fill="#FBC906"/>
+                     <path d="M93.1708 2.1465C93.3903 1.47088 94.3461 1.47088 94.5657 2.1465L96.0086 6.58737C96.1068 6.88952 96.3883 7.09409 96.706 7.09409H101.375C102.086 7.09409 102.381 8.00314 101.806 8.4207L98.0289 11.1653C97.7718 11.3521 97.6643 11.6831 97.7625 11.9852L99.2054 16.4261C99.4249 17.1017 98.6516 17.6635 98.0769 17.246L94.2993 14.5014C94.0422 14.3146 93.6942 14.3146 93.4372 14.5014L89.6596 17.246C89.0848 17.6635 88.3116 17.1017 88.5311 16.4261L89.974 11.9852C90.0722 11.6831 89.9646 11.3521 89.7076 11.1653L85.93 8.4207C85.3553 8.00314 85.6506 7.09409 86.361 7.09409H91.0304C91.3481 7.09409 91.6297 6.88952 91.7279 6.58737L93.1708 2.1465Z" fill="#FBC906"/>
+                     <path d="M121.038 2.1465C121.258 1.47088 122.213 1.47088 122.433 2.1465L123.876 6.58737C123.974 6.88952 124.256 7.09409 124.573 7.09409H129.243C129.953 7.09409 130.248 8.00314 129.674 8.4207L125.896 11.1653C125.639 11.3521 125.531 11.6831 125.63 11.9852L127.073 16.4261C127.292 17.1017 126.519 17.6635 125.944 17.246L122.166 14.5014C121.909 14.3146 121.561 14.3146 121.304 14.5014L117.527 17.246C116.952 17.6635 116.179 17.1017 116.398 16.4261L117.841 11.9852C117.939 11.6831 117.832 11.3521 117.575 11.1653L113.797 8.4207C113.222 8.00314 113.518 7.09409 114.228 7.09409H118.898C119.215 7.09409 119.497 6.88952 119.595 6.58737L121.038 2.1465Z" fill="#FBC906"/>
+                     </svg>                      
+                     </div>
+                 </div>
+                </div>
+                <div class="mt-4"><p class="font-secondary font-normal text-base text-left text-[#443634]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum,</p></div>
+              </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="rounded-2xl h-80 w-96 p-10 border">
+                <div class="flex gap-3">
+                 <div><img src="/images/profile.jpeg" alt="" srcset="" class="h-16 rounded-full"></div>
+                 <div class="flex flex-col justify-center items-center gap-2">
+                   <div><p class="font-primary font-semibold text-lg">Rohit Sharma</p></div>
+                   <div><svg width="132" height="21" viewBox="0 0 132 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M9.56923 2.1465C9.78875 1.47088 10.7446 1.47088 10.9641 2.1465L12.407 6.58737C12.5052 6.88952 12.7868 7.09409 13.1045 7.09409H17.7739C18.4843 7.09409 18.7796 8.00314 18.2049 8.4207L14.4273 11.1653C14.1703 11.3521 14.0627 11.6831 14.1609 11.9852L15.6038 16.4261C15.8233 17.1017 15.0501 17.6635 14.4753 17.246L10.6977 14.5014C10.4407 14.3146 10.0926 14.3146 9.83562 14.5014L6.058 17.246C5.48327 17.6635 4.70999 17.1017 4.92951 16.4261L6.37244 11.9852C6.47061 11.6831 6.36306 11.3521 6.10604 11.1653L2.32841 8.4207C1.75369 8.00314 2.04906 7.09409 2.75945 7.09409H7.42886C7.74656 7.09409 8.02813 6.88952 8.1263 6.58737L9.56923 2.1465Z" fill="#FBC906"/>
+                     <path d="M37.4364 2.1465C37.6559 1.47088 38.6118 1.47088 38.8313 2.1465L40.2742 6.58737C40.3724 6.88952 40.654 7.09409 40.9717 7.09409H45.6411C46.3515 7.09409 46.6468 8.00314 46.0721 8.4207L42.2945 11.1653C42.0375 11.3521 41.9299 11.6831 42.0281 11.9852L43.471 16.4261C43.6905 17.1017 42.9172 17.6635 42.3425 17.246L38.5649 14.5014C38.3079 14.3146 37.9598 14.3146 37.7028 14.5014L33.9252 17.246C33.3505 17.6635 32.5772 17.1017 32.7967 16.4261L34.2396 11.9852C34.3378 11.6831 34.2303 11.3521 33.9732 11.1653L30.1956 8.4207C29.6209 8.00314 29.9162 7.09409 30.6266 7.09409H35.296C35.6137 7.09409 35.8953 6.88952 35.9935 6.58737L37.4364 2.1465Z" fill="#FBC906"/>
+                     <path d="M65.3036 2.1465C65.5231 1.47088 66.479 1.47088 66.6985 2.1465L68.1414 6.58737C68.2396 6.88952 68.5212 7.09409 68.8389 7.09409H73.5083C74.2187 7.09409 74.514 8.00314 73.9393 8.4207L70.1617 11.1653C69.9046 11.3521 69.7971 11.6831 69.8953 11.9852L71.3382 16.4261C71.5577 17.1017 70.7844 17.6635 70.2097 17.246L66.4321 14.5014C66.1751 14.3146 65.827 14.3146 65.57 14.5014L61.7924 17.246C61.2176 17.6635 60.4444 17.1017 60.6639 16.4261L62.1068 11.9852C62.205 11.6831 62.0974 11.3521 61.8404 11.1653L58.0628 8.4207C57.4881 8.00314 57.7834 7.09409 58.4938 7.09409H63.1632C63.4809 7.09409 63.7625 6.88952 63.8607 6.58737L65.3036 2.1465Z" fill="#FBC906"/>
+                     <path d="M93.1708 2.1465C93.3903 1.47088 94.3461 1.47088 94.5657 2.1465L96.0086 6.58737C96.1068 6.88952 96.3883 7.09409 96.706 7.09409H101.375C102.086 7.09409 102.381 8.00314 101.806 8.4207L98.0289 11.1653C97.7718 11.3521 97.6643 11.6831 97.7625 11.9852L99.2054 16.4261C99.4249 17.1017 98.6516 17.6635 98.0769 17.246L94.2993 14.5014C94.0422 14.3146 93.6942 14.3146 93.4372 14.5014L89.6596 17.246C89.0848 17.6635 88.3116 17.1017 88.5311 16.4261L89.974 11.9852C90.0722 11.6831 89.9646 11.3521 89.7076 11.1653L85.93 8.4207C85.3553 8.00314 85.6506 7.09409 86.361 7.09409H91.0304C91.3481 7.09409 91.6297 6.88952 91.7279 6.58737L93.1708 2.1465Z" fill="#FBC906"/>
+                     <path d="M121.038 2.1465C121.258 1.47088 122.213 1.47088 122.433 2.1465L123.876 6.58737C123.974 6.88952 124.256 7.09409 124.573 7.09409H129.243C129.953 7.09409 130.248 8.00314 129.674 8.4207L125.896 11.1653C125.639 11.3521 125.531 11.6831 125.63 11.9852L127.073 16.4261C127.292 17.1017 126.519 17.6635 125.944 17.246L122.166 14.5014C121.909 14.3146 121.561 14.3146 121.304 14.5014L117.527 17.246C116.952 17.6635 116.179 17.1017 116.398 16.4261L117.841 11.9852C117.939 11.6831 117.832 11.3521 117.575 11.1653L113.797 8.4207C113.222 8.00314 113.518 7.09409 114.228 7.09409H118.898C119.215 7.09409 119.497 6.88952 119.595 6.58737L121.038 2.1465Z" fill="#FBC906"/>
+                     </svg>                      
+                     </div>
+                 </div>
+                </div>
+                <div class="mt-4"><p class="font-secondary font-normal text-base text-left text-[#443634]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum,</p></div>
+              </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="rounded-2xl h-80 w-96 p-10 border">
+                <div class="flex gap-3">
+                 <div><img src="/images/profile.jpeg" alt="" srcset="" class="h-16 rounded-full"></div>
+                 <div class="flex flex-col justify-center items-center gap-2">
+                   <div><p class="font-primary font-semibold text-lg">Rohit Sharma</p></div>
+                   <div><svg width="132" height="21" viewBox="0 0 132 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M9.56923 2.1465C9.78875 1.47088 10.7446 1.47088 10.9641 2.1465L12.407 6.58737C12.5052 6.88952 12.7868 7.09409 13.1045 7.09409H17.7739C18.4843 7.09409 18.7796 8.00314 18.2049 8.4207L14.4273 11.1653C14.1703 11.3521 14.0627 11.6831 14.1609 11.9852L15.6038 16.4261C15.8233 17.1017 15.0501 17.6635 14.4753 17.246L10.6977 14.5014C10.4407 14.3146 10.0926 14.3146 9.83562 14.5014L6.058 17.246C5.48327 17.6635 4.70999 17.1017 4.92951 16.4261L6.37244 11.9852C6.47061 11.6831 6.36306 11.3521 6.10604 11.1653L2.32841 8.4207C1.75369 8.00314 2.04906 7.09409 2.75945 7.09409H7.42886C7.74656 7.09409 8.02813 6.88952 8.1263 6.58737L9.56923 2.1465Z" fill="#FBC906"/>
+                     <path d="M37.4364 2.1465C37.6559 1.47088 38.6118 1.47088 38.8313 2.1465L40.2742 6.58737C40.3724 6.88952 40.654 7.09409 40.9717 7.09409H45.6411C46.3515 7.09409 46.6468 8.00314 46.0721 8.4207L42.2945 11.1653C42.0375 11.3521 41.9299 11.6831 42.0281 11.9852L43.471 16.4261C43.6905 17.1017 42.9172 17.6635 42.3425 17.246L38.5649 14.5014C38.3079 14.3146 37.9598 14.3146 37.7028 14.5014L33.9252 17.246C33.3505 17.6635 32.5772 17.1017 32.7967 16.4261L34.2396 11.9852C34.3378 11.6831 34.2303 11.3521 33.9732 11.1653L30.1956 8.4207C29.6209 8.00314 29.9162 7.09409 30.6266 7.09409H35.296C35.6137 7.09409 35.8953 6.88952 35.9935 6.58737L37.4364 2.1465Z" fill="#FBC906"/>
+                     <path d="M65.3036 2.1465C65.5231 1.47088 66.479 1.47088 66.6985 2.1465L68.1414 6.58737C68.2396 6.88952 68.5212 7.09409 68.8389 7.09409H73.5083C74.2187 7.09409 74.514 8.00314 73.9393 8.4207L70.1617 11.1653C69.9046 11.3521 69.7971 11.6831 69.8953 11.9852L71.3382 16.4261C71.5577 17.1017 70.7844 17.6635 70.2097 17.246L66.4321 14.5014C66.1751 14.3146 65.827 14.3146 65.57 14.5014L61.7924 17.246C61.2176 17.6635 60.4444 17.1017 60.6639 16.4261L62.1068 11.9852C62.205 11.6831 62.0974 11.3521 61.8404 11.1653L58.0628 8.4207C57.4881 8.00314 57.7834 7.09409 58.4938 7.09409H63.1632C63.4809 7.09409 63.7625 6.88952 63.8607 6.58737L65.3036 2.1465Z" fill="#FBC906"/>
+                     <path d="M93.1708 2.1465C93.3903 1.47088 94.3461 1.47088 94.5657 2.1465L96.0086 6.58737C96.1068 6.88952 96.3883 7.09409 96.706 7.09409H101.375C102.086 7.09409 102.381 8.00314 101.806 8.4207L98.0289 11.1653C97.7718 11.3521 97.6643 11.6831 97.7625 11.9852L99.2054 16.4261C99.4249 17.1017 98.6516 17.6635 98.0769 17.246L94.2993 14.5014C94.0422 14.3146 93.6942 14.3146 93.4372 14.5014L89.6596 17.246C89.0848 17.6635 88.3116 17.1017 88.5311 16.4261L89.974 11.9852C90.0722 11.6831 89.9646 11.3521 89.7076 11.1653L85.93 8.4207C85.3553 8.00314 85.6506 7.09409 86.361 7.09409H91.0304C91.3481 7.09409 91.6297 6.88952 91.7279 6.58737L93.1708 2.1465Z" fill="#FBC906"/>
+                     <path d="M121.038 2.1465C121.258 1.47088 122.213 1.47088 122.433 2.1465L123.876 6.58737C123.974 6.88952 124.256 7.09409 124.573 7.09409H129.243C129.953 7.09409 130.248 8.00314 129.674 8.4207L125.896 11.1653C125.639 11.3521 125.531 11.6831 125.63 11.9852L127.073 16.4261C127.292 17.1017 126.519 17.6635 125.944 17.246L122.166 14.5014C121.909 14.3146 121.561 14.3146 121.304 14.5014L117.527 17.246C116.952 17.6635 116.179 17.1017 116.398 16.4261L117.841 11.9852C117.939 11.6831 117.832 11.3521 117.575 11.1653L113.797 8.4207C113.222 8.00314 113.518 7.09409 114.228 7.09409H118.898C119.215 7.09409 119.497 6.88952 119.595 6.58737L121.038 2.1465Z" fill="#FBC906"/>
+                     </svg>                      
+                     </div>
+                 </div>
+                </div>
+                <div class="mt-4"><p class="font-secondary font-normal text-base text-left text-[#443634]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum,</p></div>
+              </div>
+            </div>
+           </div>
+           <div class="swiper-pagination w-fit"></div>
+           <div class=" flex items-start justify-between  md:justify-end mx-5 md:mr-10">
+             <button id="slider-button-left" class="z-20 group !p-2 flex justify-center items-center border border-solid bg-[#D62B06] border-[#D62B06] !w-12 !h-12 transition-all duration-500 rounded-full  hover:bg-[#ffffff] " data-carousel-prev>
+               <svg class="h-5 w-5 text-[#ffffff] group-hover:text-[#D62B06]" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                 <path d="M10.0002 11.9999L6 7.99971L10.0025 3.99719" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+               </svg>
+             </button>
+             <button id="slider-button-right" class="z-20 !ml-2 group !p-2 flex justify-center items-center border border-solid bg-[#D62B06] border-[#D62B06] !w-12 !h-12 transition-all duration-500 rounded-full hover:bg-[#ffffff] " data-carousel-next>
+               <svg class="h-5 w-5 text-[#ffffff] group-hover:text-[#D62B06]" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                 <path d="M5.99984 4.00012L10 8.00029L5.99748 12.0028" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+               </svg>
+             </button>
+           </div>
+          </div>    
+    </div>
+    
+   </section>
+
+  <!-- 5 page-end -->
+
+  <!-- 6 page-start -->
+
+  <section class="mt-7 md:mt-14 lg:mt-28 flex flex-col items-center gap-10">
+    <div>
+      <div class="flex gap-4 items-center">
+        <div class="h-3 w-3 bg-orange-600 rounded-xl"></div>
+        <div class="font-secondary font-bold text-xs">Our Category</div>
+      </div>
+    </div>
+    <div>
+      <h2 class="font-primary text-center text-3xl font-bold">Check out latest Store location</h2>
+    </div>
+   </section>
+   <div class="w-5/6 mx-auto mt-12">
+    <div class="flex flex-col lg:flex-row gap-5">
+        <!-- First Thumb Carousel -->
+        <div class="w-full lg:w-1/2 bg-white p-4 rounded-lg h-fit border-2">
+            <div class="swiper-container carousel-1 mb-2 rounded overflow-hidden">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="/images/location1.jpeg" alt="Slide 1" class="w-full h-48 lg:h-64 object-cover"></div>
+                    <div class="swiper-slide"><img src="/images/location2.png" alt="Slide 2" class="w-full h-48 lg:h-64 object-cover"></div>
+                    <div class="swiper-slide"><img src="/images/location1.jpeg" alt="Slide 3" class="w-full h-48 lg:h-64 object-cover"></div>
+                    <div class="swiper-slide"><img src="/images/location2.png" alt="Slide 4" class="w-full h-48 lg:h-64 object-cover"></div>
+                </div>
+            </div>
+            <div>
+              <div class="mt-5 flex gap-3">
+                <div >
+                <svg class="bg-pink-100 rounded-full p-2" width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.1833 7.04158C16.3083 3.19159 12.95 1.45825 10 1.45825C10 1.45825 10 1.45825 9.99167 1.45825C7.05 1.45825 3.68334 3.18325 2.80834 7.03325C1.83334 11.3333 4.46667 14.9749 6.85 17.2666C7.73334 18.1166 8.86667 18.5416 10 18.5416C11.1333 18.5416 12.2667 18.1166 13.1417 17.2666C15.525 14.9749 18.1583 11.3416 17.1833 7.04158ZM10 11.2166C8.55 11.2166 7.375 10.0416 7.375 8.59159C7.375 7.14158 8.55 5.96658 10 5.96658C11.45 5.96658 12.625 7.14158 12.625 8.59159C12.625 10.0416 11.45 11.2166 10 11.2166Z" fill="#D62B06"/>
+                  </svg>          
+                </div>
+                <p class="font-secondary font-normal text-sm">Croma, 462, Grand Galleria, Pheonix Mills Compound, Tulsi Pipe Rd, Block-43, Parel, Mumbai, 400013</p>
+              </div>
+              <div class="mt-5 flex gap-3">
+                <svg class="bg-pink-100 rounded-full p-2" width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.26716 5.81616L3.71716 8.71616C4.11716 9.52449 4.11716 10.4662 3.71716 11.2745L2.25883 14.1828C1.01716 16.6662 3.70049 19.2912 6.15883 17.9912L7.44216 17.3078C7.61716 17.2162 7.75883 17.0662 7.84216 16.8828L12.5838 6.34116C12.7755 5.90782 12.6005 5.39949 12.1838 5.18282L6.15049 2.00782C3.70049 0.716158 1.01716 3.33282 2.26716 5.81616Z" fill="#D62B06"/>
+                  <path d="M13.593 7.00012L10.4847 13.9001C10.1347 14.6751 10.968 15.4585 11.718 15.0585L16.5263 12.5251C18.568 11.4501 18.568 8.53345 16.5263 7.45845L14.8263 6.56678C14.368 6.33345 13.8097 6.53345 13.593 7.00012Z" fill="#D62B06"/>
+                  </svg>                  
+                  <p class="font-secondary font-normal text-sm underline">Get Direction</p>
+              </div>
+              <div class="mt-5 mb-5 flex gap-3">
+                <svg class="bg-pink-100 rounded-full p-2" width="30" height="30" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 0.666748C4.40833 0.666748 0.666664 4.40841 0.666664 9.00008C0.666664 13.5917 4.40833 17.3334 9 17.3334C13.5917 17.3334 17.3333 13.5917 17.3333 9.00008C17.3333 4.40841 13.5917 0.666748 9 0.666748ZM12.625 11.9751C12.5083 12.1751 12.3 12.2834 12.0833 12.2834C11.975 12.2834 11.8667 12.2584 11.7667 12.1917L9.18333 10.6501C8.54166 10.2667 8.06666 9.42508 8.06666 8.68341V5.26675C8.06666 4.92508 8.35 4.64175 8.69166 4.64175C9.03333 4.64175 9.31666 4.92508 9.31666 5.26675V8.68341C9.31666 8.98341 9.56666 9.42508 9.825 9.57508L12.4083 11.1167C12.7083 11.2917 12.8083 11.6751 12.625 11.9751Z" fill="#D62B06"/>
+                </svg>
+                <p class="font-secondary font-normal text-sm ">10:00am-9:00pm</p>
+                </div>
+            </div>
+            <div class="swiper-container carousel-1-thumbs">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="/images/location1.jpeg" alt="Thumb 1" class="w-full h-16 lg:h-20 object-cover"></div>
+                    <div class="swiper-slide"><img src="/images/location2.png" alt="Thumb 2" class="w-full h-16 lg:h-20 object-cover"></div>
+                    <div class="swiper-slide"><img src="/images/location1.jpeg" alt="Thumb 3" class="w-full h-16 lg:h-20 object-cover"></div>
+                    <div class="swiper-slide"><img src="/images/location2.png" alt="Thumb 4" class="w-full h-16 lg:h-20 object-cover"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Thumb Carousel -->
+        <div class="w-full lg:w-1/2 bg-white p-4 rounded-lg h-fit border-2">
+            <div class="swiper-container carousel-2 mb-2 rounded overflow-hidden">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="/images/location2.png" alt="Slide 1" class="w-full h-48 lg:h-64 object-cover"></div>
+                    <div class="swiper-slide"><img src="/images/location1.jpeg" alt="Slide 2" class="w-full h-48 lg:h-64 object-cover"></div>
+                    <div class="swiper-slide"><img src="/images/location2.png" alt="Slide 3" class="w-full h-48 lg:h-64 object-cover"></div>
+                    <div class="swiper-slide"><img src="/images/location1.jpeg" alt="Slide 4" class="w-full h-48 lg:h-64 object-cover"></div>
+                </div>
+            </div>
+            <div>
+              <div class="mt-5 flex gap-3">
+                <div >
+                <svg class="bg-pink-100 rounded-full p-2" width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.1833 7.04158C16.3083 3.19159 12.95 1.45825 10 1.45825C10 1.45825 10 1.45825 9.99167 1.45825C7.05 1.45825 3.68334 3.18325 2.80834 7.03325C1.83334 11.3333 4.46667 14.9749 6.85 17.2666C7.73334 18.1166 8.86667 18.5416 10 18.5416C11.1333 18.5416 12.2667 18.1166 13.1417 17.2666C15.525 14.9749 18.1583 11.3416 17.1833 7.04158ZM10 11.2166C8.55 11.2166 7.375 10.0416 7.375 8.59159C7.375 7.14158 8.55 5.96658 10 5.96658C11.45 5.96658 12.625 7.14158 12.625 8.59159C12.625 10.0416 11.45 11.2166 10 11.2166Z" fill="#D62B06"/>
+                  </svg>          
+                </div>
+                <p class="font-secondary font-normal text-sm">Croma, 462, Grand Galleria, Pheonix Mills Compound, Tulsi Pipe Rd, Block-43, Parel, Mumbai, 400013</p>
+              </div>
+              <div class="mt-5 flex gap-3">
+                <svg class="bg-pink-100 rounded-full p-2" width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.26716 5.81616L3.71716 8.71616C4.11716 9.52449 4.11716 10.4662 3.71716 11.2745L2.25883 14.1828C1.01716 16.6662 3.70049 19.2912 6.15883 17.9912L7.44216 17.3078C7.61716 17.2162 7.75883 17.0662 7.84216 16.8828L12.5838 6.34116C12.7755 5.90782 12.6005 5.39949 12.1838 5.18282L6.15049 2.00782C3.70049 0.716158 1.01716 3.33282 2.26716 5.81616Z" fill="#D62B06"/>
+                  <path d="M13.593 7.00012L10.4847 13.9001C10.1347 14.6751 10.968 15.4585 11.718 15.0585L16.5263 12.5251C18.568 11.4501 18.568 8.53345 16.5263 7.45845L14.8263 6.56678C14.368 6.33345 13.8097 6.53345 13.593 7.00012Z" fill="#D62B06"/>
+                  </svg>                  
+                  <p class="font-secondary font-normal text-sm underline">Get Direction</p>
+              </div>
+              <div class="mt-5 mb-5 flex gap-3">
+                <svg class="bg-pink-100 rounded-full p-2" width="30" height="30" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 0.666748C4.40833 0.666748 0.666664 4.40841 0.666664 9.00008C0.666664 13.5917 4.40833 17.3334 9 17.3334C13.5917 17.3334 17.3333 13.5917 17.3333 9.00008C17.3333 4.40841 13.5917 0.666748 9 0.666748ZM12.625 11.9751C12.5083 12.1751 12.3 12.2834 12.0833 12.2834C11.975 12.2834 11.8667 12.2584 11.7667 12.1917L9.18333 10.6501C8.54166 10.2667 8.06666 9.42508 8.06666 8.68341V5.26675C8.06666 4.92508 8.35 4.64175 8.69166 4.64175C9.03333 4.64175 9.31666 4.92508 9.31666 5.26675V8.68341C9.31666 8.98341 9.56666 9.42508 9.825 9.57508L12.4083 11.1167C12.7083 11.2917 12.8083 11.6751 12.625 11.9751Z" fill="#D62B06"/>
+                </svg>
+                <p class="font-secondary font-normal text-sm ">10:00am-9:00pm</p>
+                </div>
+            </div>
+            <div class="swiper-container carousel-2-thumbs">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="/images/location2.png" alt="Thumb 1" class="w-full h-16 lg:h-20 object-cover"></div>
+                    <div class="swiper-slide"><img src="/images/location1.jpeg" alt="Thumb 2" class="w-full h-16 lg:h-20 object-cover"></div>
+                    <div class="swiper-slide"><img src="/images/location2.png" alt="Thumb 3" class="w-full h-16 lg:h-20 object-cover"></div>
+                    <div class="swiper-slide"><img src="/images/location1.jpeg" alt="Thumb 4" class="w-full h-16 lg:h-20 object-cover"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!-- 6 page-end -->
+
+
+  <!-- 7 page-start -->
+
+  <section class="mt-7 md:mt-14 lg:mt-28 flex flex-col items-center gap-10">
+    <div>
+      <div class="flex gap-4 items-center">
+        <div class="h-3 w-3 bg-orange-600 rounded-xl"></div>
+        <div class="font-secondary font-bold text-xs">Our image gallery</div>
+      </div>
+    </div>
+    <div>
+      <h2 class="font-primary text-center text-3xl font-bold">Check out latest Images</h2>
+    </div>
+    <div class="grid  grid-cols-3 grid-rows-3 md:grid-cols-6 md:grid-rows-3 gap-2 p-10 md:px-28">
+      <div class=""><img src="/images/g1.jpeg" alt="" srcset="" class="h-[150px] w-[200px] rounded-lg object-cover"></div>  
+      <div class=""><img src="/images/g2.jpeg" alt="" srcset="" class="h-[150px] w-[200px] rounded-lg object-cover"></div>  
+      <div class="md:col-span-2 md:row-span-2"><img src="/images/g3.jpeg" alt="" srcset="" class="md:h-[310px] h-[150px] w-full object-cover rounded-lg"></div>  
+      <div class=""><img src="/images/g4.jpeg" alt="" srcset="" class="h-[150px] w-[200px] rounded-lg object-cover"></div>  
+      <div class=""><img src="/images/g5.jpeg" alt="" srcset="" class="h-[150px] w-[200px] rounded-lg object-cover"></div>  
+      <div class=""><img src="/images/g6.jpeg" alt="" srcset="" class="h-[150px] w-[200px] rounded-lg object-cover"></div>  
+      <div class=""><img src="/images/g7.jpeg" alt="" srcset="" class="h-[150px] w-[200px] rounded-lg object-cover"></div>  
+      <div class=""><img src="/images/g8.jpeg" alt="" srcset="" class="h-[150px] w-[200px] rounded-lg object-cover"></div>  
+      <div class=""><img src="/images/g9.jpeg" alt="" srcset="" class="h-[150px] w-[200px] rounded-lg object-cover"></div>  
+      <div class=""><img src="/images/g10.jpeg" alt="" srcset="" class="h-[150px] w-[200px] rounded-lg object-cover"></div>  
+      <div class=""><img src="/images/g11.jpeg" alt="" srcset="" class="h-[150px] w-[200px] rounded-lg object-cover"></div>  
+      <div class=""><img src="/images/g12.jpeg" alt="" srcset="" class="h-[150px] w-[200px] rounded-lg object-cover"></div>  
+      <div class=""><img src="/images/g13.jpeg" alt="" srcset="" class="h-[150px] w-[200px] rounded-lg object-cover"></div>  
+      <div class=""><img src="/images/g14.jpeg" alt="" srcset="" class="h-[150px] w-[200px] rounded-lg object-cover"></div>  
+      <div class=""><img src="/images/g15.jpeg" alt="" srcset="" class="h-[150px] w-[200px] rounded-lg object-cover"></div>  
+    </div>
+   </section>
+
+  <!-- 7 page-end -->
+
+
+  <!-- footer start -->
+
+   <section class="w-full bg-black text-white ">
+    <div class="md:px-24 px-2 pt-16 pb-8 md:flex w-full justify-center border-b border-[#FFFFFF]">
+      <div class="flex-col md:w-1/3 md:gap-10">
+        <h2 class="font-primary text-3xl font-semibold">Maharashtra optician</h2>
+        <p class="font-secondary mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, est felis, sagittis viverra nulla mattis scelerisque. Eget cras integer. The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, </p>
+        <div class="flex gap-6 mt-2">
+          <a href="#"><i class="ri-facebook-fill "></i></a>
+          <a href="#"><i class="ri-instagram-fill"></i></a>
+          <a href="#"><i class="ri-linkedin-fill"></i></a>
+          <a href="#"><i class="ri-youtube-fill"></i></a>
+        </div>
+      </div>
+      <div class="md:w-1/3 flex flex-col mt-8 md:mt-0 md:items-center">
+        <h2 class="font-primary font-semibold text-xl">Usefull links</h2>
+        <ul class="list-disc flex flex-col mt-2 ml-5 md:ml-11 md:gap-3">
+          <li><a href="#">Make Appintments</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Make Appintments</a></li>
+          <li><a href="#">About us</a></li>
+        </ul>
+      </div>
+      <div class="md:w-1/3 flex flex-col mt-8 md:mt-0">
+        <h2 class="font-primary font-semibold text-xl ">Get in touch</h2>
+        <ul class="list-disc flex flex-col md:gap-3 mt-2 ml-5 ">
+          <li><a href="#">Croma, 462, Grand Galleria, Pheonix 
+            Mills Compound, Tulsi Pipe Rd, 
+            Block-43, Parel, Mumbai, 400013</a></li>
+          <li><a href="#">+91 852149630</a></li>
+          <li><a href="#">admin@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+  
+    <div>
+      <p class="text-center text-sm md:text-base text-white py-4">Copyright 2014 Maharashtra Optician. All right reserved</p>
+    </div>
+   </section>
+
+  <!-- footer end -->
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
